@@ -17,7 +17,7 @@ export const HomePage = () => {
       <title>Home</title>
       <div className="header">
         <div className="left-section">
-          <a href="index.html" className="header-link">
+          <a href="" className="header-link">
             <img className="logo" src={logoWhite} />
             <img className="mobile-logo" src={mobileLogoWhite} />
           </a>
