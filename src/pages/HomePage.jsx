@@ -14,6 +14,7 @@ import rating40 from "../assets/ratings/rating-40.png";
 export const HomePage = () => {
   return (
     <>
+      <title>Home</title>
       <div className="header">
         <div className="left-section">
           <a href="index.html" className="header-link">
