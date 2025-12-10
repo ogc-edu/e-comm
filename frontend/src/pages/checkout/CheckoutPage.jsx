@@ -1,6 +1,6 @@
 import { CheckoutHeader } from "../../components/CheckoutHeader";
-import socksImage from "../assets/products/athletic-cotton-socks-6-pairs.jpg";
-import basketballImage from "../assets/products/intermediate-composite-basketball.jpg";
+import socksImage from "../../assets/products/athletic-cotton-socks-6-pairs.jpg";
+import basketballImage from "../../assets/products/intermediate-composite-basketball.jpg";
 import "./CheckoutPage.css";
 
 export const CheckoutPage = () => {
