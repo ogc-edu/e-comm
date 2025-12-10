@@ -6,6 +6,7 @@ import tshirtImage from "../assets/products/adults-plain-cotton-tshirt-2-pack-te
 import rating45 from "../assets/ratings/rating-45.png";
 import rating40 from "../assets/ratings/rating-40.png";
 import { Header } from "../components/Header";
+import { products } from "../data/products.js";
 
 export const HomePage = () => {
   return (

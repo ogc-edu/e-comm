@@ -38,6 +38,11 @@
   border: 1px solid white;
 }
 
+.header .header-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+}
+
 .header .logo {
   height: 26px;
   margin-top: 1px;
@@ -112,6 +117,11 @@
   padding-right: 13px;
 }
 
+.header .orders-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
 .header .orders-text {
   display: block;
   font-size: 15px;
@@ -123,6 +133,12 @@
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.header .cart-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  padding: 6px;
 }
 
 .header .cart-icon {

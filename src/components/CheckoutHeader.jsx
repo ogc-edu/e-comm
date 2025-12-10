@@ -2,23 +2,17 @@ import logoWhite from "../assets/logo-white.png";
 import mobileLogoWhite from "../assets/mobile-logo-white.png";
 import searchIcon from "../assets/icons/search-icon.png";
 import cartIcon from "../assets/icons/cart-icon.png";
-import "./header.css";
-import { NavLink } from "react-router";
+import "./checkout-header.css";
+import { Link } from "react-router";
 
-export const Header = () => {
+export const CheckoutHeader = () => {
   return (
     <div className="header">
       <div className="left-section">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? "header-link active" : "header-link"
-          }
-          end
-        >
+        <Link to="/" className="header-link">
           <img className="logo" src={logoWhite} />
           <img className="mobile-logo" src={mobileLogoWhite} />
-        </NavLink>
+        </Link>
       </div>
 
       <div className="middle-section">
@@ -30,27 +24,15 @@ export const Header = () => {
       </div>
 
       <div className="right-section">
-        <NavLink
-          className={({ isActive }) =>
-            isActive
-              ? "orders-link header-link active"
-              : "orders-link header-link"
-          }
-          to="/orders"
-        >
+        <Link className="orders-link header-link" to="/orders">
           <span className="orders-text">Orders</span>
-        </NavLink>
+        </Link>
 
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "cart-link header-link active" : "cart-link header-link"
-          }
-          to="/checkout"
-        >
-          <img className="cart-icon" src={cartIcon} />
+        <Link className="cart-link header-link" to="/checkout">
+          <img className="cart-icon" src={cartIcon} alt="cart icon" />
           <div className="cart-quantity">3</div>
           <div className="cart-text">Cart</div>
-        </NavLink>
+        </Link>
       </div>
     </div>
   );
