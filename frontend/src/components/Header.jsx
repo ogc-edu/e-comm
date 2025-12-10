@@ -5,7 +5,7 @@ import cartIcon from "../assets/icons/cart-icon.png";
 import "./header.css";
 import { NavLink } from "react-router";
 
-export const Header = () => {
+export const Header = ({ cartItems }) => {
   return (
     <div className="header">
       <div className="left-section">
@@ -48,7 +48,7 @@ export const Header = () => {
           to="/checkout"
         >
           <img className="cart-icon" src={cartIcon} />
-          <div className="cart-quantity">3</div>
+          <div className="cart-quantity">{cartItems?.length || 0}</div>
           <div className="cart-text">Cart</div>
         </NavLink>
       </div>

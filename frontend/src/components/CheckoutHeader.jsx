@@ -5,7 +5,7 @@ import cartIcon from "../assets/icons/cart-icon.png";
 import "./checkout-header.css";
 import { Link } from "react-router";
 
-export const CheckoutHeader = () => {
+export const CheckoutHeader = ({ cartItems }) => {
   return (
     <div className="header">
       <div className="left-section">
@@ -30,7 +30,7 @@ export const CheckoutHeader = () => {
 
         <Link className="cart-link header-link" to="/checkout">
           <img className="cart-icon" src={cartIcon} alt="cart icon" />
-          <div className="cart-quantity">3</div>
+          <div className="cart-quantity">{cartItems?.length || 0}</div>
           <div className="cart-text">Cart</div>
         </Link>
       </div>
