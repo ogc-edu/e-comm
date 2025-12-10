@@ -2,8 +2,13 @@ import "./HomePage.css";
 import { Header } from "../components/Header";
 import { products } from "../data/products.js";
 import { ProductContainer } from "../components/ProductContainer.jsx";
+import axios from "axios";
 
 export const HomePage = () => {
+  axios.get("http://localhost:3000/api/products").then((response) => {
+    console.log(response.data);
+  });
+
   return (
     <>
       <title>Home</title>
